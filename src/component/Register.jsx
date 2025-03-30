@@ -34,7 +34,7 @@ if(!input.name|| !input.city || !input.email|| !input.password ){
   alert("FAll fields are required!")
   return;
 }
-localStorage.setItem('User', JSON.stringify(user))
+localStorage.setItem('User', JSON.stringify(input))
 navigate("/LogIn")
 }
 
