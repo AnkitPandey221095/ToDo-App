@@ -1,0 +1,95 @@
+.signup_container{
+    width:400px;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    transition: 3s ease-in-out;
+    color: #3E2723;
+    }
+    
+    
+    h1{
+        text-align: center;
+        padding: 20px 0 0 0;
+        color: #3E2723;
+    }
+    
+    .input_section{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    
+    .input_section p{
+        font-size: 20px;
+        font-weight: 400;
+        padding: 10px 0 3px 0;
+        color: #3E2723;
+    }
+    
+    .input_section input{
+        padding: 10px 10px;
+        font-weight: 600;
+        border-radius: 2px;
+        background: #e8e1e1;
+        color:#676767;
+        border: none;
+       
+        
+    }
+    
+    .password_change{
+        padding: 0 20px;
+        font-size: 12px;
+    }
+    
+    .password_change span{ 
+        color:blue;
+    }
+    
+    .submit_btn{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+        margin-top: 20px;
+    }
+    
+    .submit_btn .submit{
+        width: 150px;
+        background:#3E2723;
+        font-size: 20px;
+        font-weight:500;
+        color:white;
+        padding:5px 10px;
+        border-radius: 20px;
+        border:none;
+        transition:ease-in-out .5s ;
+        cursor:pointer;
+    }
+
+    .submit_btn .submit:hover{
+        border-radius:0;
+    }
+
+
+    .last_text2{
+        padding: 20px;
+        font-size: 15px;
+    }
+    
+    .last_text2>span{
+       color: blue;
+       cursor:pointer;
+    }
+   
+
+    @media only screen and (max-width: 420px) {
+        .signup_container {
+          width: 100%;
+          height: 100%;
+        }
+      }
