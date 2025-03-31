@@ -1,4 +1,4 @@
-# 📝React.js Todo App
+# 📝React.js ToDo-App
 This is a React-based Todo Web App built with Vite, featuring a user-friendly and fully responsive design. It includes user registration and login functionality, utilizing browser local storage for authentication. Additionally, the app integrates a weather API to provide real-time weather updates. The project ensures a smooth and interactive experience, making task management effortless while keeping users informed about current weather conditions.
 
 ## 💻 Tech Stack
@@ -36,7 +36,7 @@ Users can reorder tasks based on priority.
 
 To install and run the project locally, follow these steps:
 
-- Clone the repository: `https://github.com/AnkitPandey221095/ToDo.git`
+- Clone the repository: `https://github.com/AnkitPandey221095/ToDo-App.git`
 - Navigate to the project directory: `cd ToDo`
 - Install the dependencies: `npm install`
 - Start the development server: `npm run dev`
