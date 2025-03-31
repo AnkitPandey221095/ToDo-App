@@ -7,7 +7,7 @@ import LogIn from './component/LogIn'
 function App() {
   return (
     <div className="containr">
-     <BrowserRouter basename="/To-Do-List">
+     <BrowserRouter>
      <Routes>
       <Route path='/'element={<Register/>}></Route>
       <Route path='/LogIn'element={<LogIn/>}></Route>
