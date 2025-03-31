@@ -1,7 +1,7 @@
 {
   "homepage": "https://AnkitPandey221095.github.io/To-Do-List",
   "name": "todolist",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {

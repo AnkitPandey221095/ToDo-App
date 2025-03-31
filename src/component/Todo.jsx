@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import styles from'./Todo.module.css'
+import './Todo.css'
 import {useNavigate} from 'react-router-dom'
 
 // for getting local data
@@ -80,30 +80,30 @@ localStorage.setItem('Tasks',JSON.stringify(list))
 },[list])
 
   return (
-    <div className={styles.Todo_list_container}>
-      <div className={styles.UserName}>
+    <div className="Todo_list_container">
+      <div className="UserName">
         <h3><span>👤&nbsp;</span><u>{User.name}</u></h3>
       </div>
-      <button className={styles.LogOut} onClick={LogOutAction}>LogOut</button>
-        <div className={styles.intro}>
+      <button className="LogOut" onClick={LogOutAction}>LogOut</button>
+        <div className="intro">
         <img src="https://tse3.mm.bing.net/th?id=OIP.CF_4lvbDsd3EFolEGiSzIQHaHa&pid=Api&P=0&h=180" alt="" />
         <h3>Add Your task In the List 👇</h3>
         </div>
-        <div className={styles.input}>
+        <div className="input">
         <input type="text"  placeholder="✍ write you task ......"
         value={inputData} onChange={(e)=>{setInputData(e.target.value)}}
         />
         <button onClick={add_item}>➕</button>
         </div>
-            <div className={styles.task_list}>
+            <div className="task_list">
               <h2>Your Tasks 📝</h2>
-              <p className={styles.weather}><b>Today's Wether of your city: {data}</b></p>
-                {list.map((item,id)=>{return(<div className={styles.task} key={id}>
-                    <h3 className={styles.text}>{item}</h3>
-                    <div className={styles.btn_container}>
-                    <button className={styles.delete} onClick={()=>{deleteitem(id)}}>➖</button>
-                    <button className={styles.up} onClick={()=>{Upward(id)}}>👆</button>
-                    <button className={styles.down} onClick={()=>{downward(id)}}>👇</button>
+              <p className="weather"><b>Today's Wether of your city: {data}</b></p>
+                {list.map((item,id)=>{return(<div className="task" key={id}>
+                    <h3 className="text">{item}</h3>
+                    <div className="btn_container">
+                    <button className="delete" onClick={()=>{deleteitem(id)}}>➖</button>
+                    <button className="up" onClick={()=>{Upward(id)}}>👆</button>
+                    <button className="down" onClick={()=>{downward(id)}}>👇</button>
                     </div>
                 </div>)})}
             </div>
